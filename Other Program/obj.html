@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Person {
+        constructor(name, age) {
+          this.name = name;
+          this.age = age;
+        }
+
+        displayInfo() {
+          console.log(`Name: ${this.name}, Age: ${this.age}`);
+        }
+
+        // Method to calculate and return the birth year
+        calculateBirthYear(currentYear) {
+          return currentYear - this.age;
+        }
+      }
+
+      let person1 = new Person("Alice", 30);
+      let person2 = new Person("Bob", 25);
+
+      person1.displayInfo(); // Output: Name: Alice, Age: 30
+      document.write(person2.calculateBirthYear(2024)); // Output: 1999
+    </script>
+  </body>
+</html>

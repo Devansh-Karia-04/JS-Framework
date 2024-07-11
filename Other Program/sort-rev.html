@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let numbers = [5, 3, 8, 1, 2];
+      //sort:
+      console.log("Original array:", numbers);
+      numbers.sort((a, b) => a - b);
+      console.log("Sorted array:", numbers);
+
+      //reverse:
+      numbers.reverse();
+      console.log("Reversed array:", numbers);
+
+      //push:
+      numbers.push(7);
+      console.log("Array after push(7):", numbers);
+
+      //pop:
+      let poppedElement = numbers.pop();
+      console.log("Popped element:", poppedElement);
+      console.log("Array after pop():", numbers);
+
+      //Unshift:
+      numbers.unshift(10);
+      console.log("Array after unshift(10):", numbers);
+
+      //Shift:
+      console.log("Shifted element:", shiftedElement);
+      console.log("Array after shift():", numbers);
+
+      //Map:
+      let squaredNumbers = numbers.map((num) => num * num);
+      console.log("Squared numbers:", squaredNumbers);
+
+      //filter:
+      let evenNumbers = numbers.filter((num) => num % 2 === 0);
+      console.log("Even numbers:", evenNumbers);
+
+      let sum = numbers.reduce((acc, curr) => acc + curr, 0);
+      console.log("Sum of numbers:", sum);
+
+
+      console.log("Numbers in the array:");
+      numbers.forEach((num) => console.log(num));
+    </script>
+  </body>
+</html>

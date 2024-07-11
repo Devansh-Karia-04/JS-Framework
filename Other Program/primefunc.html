@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+
+    <body>
+        <script>
+            const isPrime = (num) =>
+            {
+                if (num <= 1)
+                {
+                    return false;
+                }
+
+                if (num % 2 === 0)
+                {
+                    return num === 2;
+                }
+
+                for (let i = 3; i * i <= num; i += 2)
+                {
+                    if (num % i === 0)
+                    {
+                        return false;
+                    }
+                }
+
+                return true;
+            };
+            
+            const numberToCheck = 11;
+            const isItPrime = isPrime(numberToCheck);
+
+            console.log(
+                `${numberToCheck} is ${isItPrime ? "a prime number" : "not a prime number"
+                }`
+            );
+        </script>
+    </body>
+
+</html>

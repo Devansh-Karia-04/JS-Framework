@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Destructuring</title>
+  </head>
+
+  <body>
+    <script>
+      const person = {
+        name: "John Doe",
+        age: 30,
+        email: "hello@gmail.com",
+        address: {
+          street: "123 Main Road",
+          city: "Rajkot",
+          country: "INDIA",
+        },
+      }
+
+      const {
+        name,
+        age,
+        email,
+        address: { street, city, country },
+      } = person;
+
+      console.log(`Name: ${name}`);
+      console.log(`Age: ${age}`);
+      console.log(`Email: ${email}`);
+      console.log(`Street: ${street}`);
+      console.log(`City: ${city}`);
+      console.log(`Country: ${country}`);
+    </script>
+  </body>
+</html>

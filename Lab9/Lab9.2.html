@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Destructuring</title>
+  </head>
+  <body>
+    <script>
+      const numbers = [10, 20, 30, 40, 50];
+
+      const [first, second, third, fourth, fifth] = numbers;
+
+      console.log(`First: ${first}`);
+      console.log(`Second: ${second}`);
+      console.log(`Third: ${third}`);
+      console.log(`Fourth: ${fourth}`);
+      console.log(`Fifth: ${fifth}`);
+
+      // Skipping elements
+      const [, , thirdOnly, , fifthOnly] = numbers;
+
+      console.log(`Third (only): ${thirdOnly}`);
+      console.log(`Fifth (only): ${fifthOnly}`);
+
+      // Using default values
+      const [a, b, c, d, e, f = 60] = numbers;
+
+      console.log(`First: ${a}`);
+      console.log(`Second: ${b}`);
+      console.log(`Third: ${c}`);
+      console.log(`Fourth: ${d}`);
+      console.log(`Fifth: ${e}`);
+      console.log(`Sixth (default): ${f}`);
+    </script>
+  </body>
+</html>

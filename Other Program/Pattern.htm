@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      for (let i = 0; i < 5; i++) {
+        for (let j = 0; j < 5; j++) {
+          document.write("*");
+        }
+        document.write("<br/>");
+      }
+    </script>
+    <script>
+        
+      let rows = 5;
+      let pattern = "";
+      for (let n = 1; n <= rows; n++) {
+        for (let num = 1; num <= 5; num++) {
+          if (n == 1 || n == rows) pattern += "*";
+          else {
+            if (num == 1 || num == 5) {
+              pattern += "*";
+            } else {
+              pattern += " ";
+            }
+          }
+          document.write("<br/>");
+        }
+        pattern += "\n";
+      }
+      document.write(pattern);
+    </script>
+  </body>
+</html>

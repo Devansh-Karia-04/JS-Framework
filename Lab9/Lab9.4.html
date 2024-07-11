@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function sum(x, y, z) {
+        return x + y + z;
+      }
+
+      const numbers = [5, 10, 15];
+      const result = sum(...numbers);
+
+      console.log("Sum:", result);
+      //Sum: 30
+    </script>
+    <script>
+      const array1 = [1, 2, 3];
+      const array2 = [4, 5, 6];
+      const combinedArray = [...array1, ...array2];
+
+      console.log("Combined Array:", combinedArray);
+      //Array: [1, 2, 3, 4, 5, 6]
+    </script>
+    <script>
+      const originalObject = { name: "Alice", age: 25 };
+      const copiedObject = { ...originalObject };
+
+      console.log("Original Object:", originalObject);
+      console.log("Copied Object:", copiedObject);
+      //Original Object: { name: 'Alice', age: 25 }
+      //Copied Object: { name: 'Alice', age: 25 }
+    </script>
+  </body>
+</html>
